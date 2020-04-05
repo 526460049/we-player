@@ -1,0 +1,27 @@
+# ninja log v5
+0	1167	607770437	CMakeFiles/we-player.dir/src/main.cpp.obj	24cb5bc14900a5d5
+0	22	0	clean	b049eaf95b698d8c
+1	670	607770667	CMakeFiles/we-player.dir/src/main.cpp.obj	24cb5bc14900a5d5
+1	13	0	clean	b049eaf95b698d8c
+1	946	607770936	CMakeFiles/we-player.dir/src/main.cpp.obj	24cb5bc14900a5d5
+0	15	0	clean	b049eaf95b698d8c
+1	374	607771202	CMakeFiles/we-player.dir/src/main.cpp.obj	24cb5bc14900a5d5
+1	734	607771521	CMakeFiles/we-player.dir/src/main.cpp.obj	24cb5bc14900a5d5
+1	573	607772376	build.ninja	a67aefb747c65e6c
+1	16	0	clean	b049eaf95b698d8c
+1	2189	607772378	CMakeFiles/we-player.dir/src/main.cpp.obj	2bff56d1004fe3fc
+0	15	0	clean	b049eaf95b698d8c
+1	684	607772405	CMakeFiles/we-player.dir/src/main.cpp.obj	2bff56d1004fe3fc
+1	240	607774627	build.ninja	a67aefb747c65e6c
+1	655	607774874	CMakeFiles/we-player.dir/src/main.cpp.obj	a1d50996a662e949
+2	244	607775247	build.ninja	a67aefb747c65e6c
+1	17	0	clean	67256af933a03e99
+1	324	607775440	build.ninja	a67aefb747c65e6c
+0	15	0	clean	67256af933a03e99
+1	284	607775446	build.ninja	a67aefb747c65e6c
+0	21	0	clean	67256af933a03e99
+1	693	607775814	CMakeFiles/we-player.dir/src/main.cpp.obj	a3170e2f9d1d9081
+1	15	0	clean	67256af933a03e99
+1	231	607777155	build.ninja	a67aefb747c65e6c
+1	19	0	clean	67256af933a03e99
+1	871	607777156	CMakeFiles/we-player.dir/src/main.cpp.obj	80f251ce928594f4
