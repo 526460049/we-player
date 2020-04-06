@@ -38,6 +38,14 @@ include rules.ninja
 
 build cmake_object_order_depends_target_we-player: phony || CMakeFiles\we-player.dir
 
+build CMakeFiles\we-player.dir\src\player.cpp.obj: CXX_COMPILER__we-player ..\..\..\src\player.cpp || cmake_object_order_depends_target_we-player
+  FLAGS = -D__STDC_CONSTANT_MACROS /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -I..\..\..\include -I..\..\..\libavcodec\avcodec.h -I..\..\..\libavformat\avformat.h -I..\..\..\libavutil\avutil.h -I..\..\..\libavdevice\avdevice.h -I..\..\..\libavfilter\avfilter.h -I..\..\..\libpostproc\postprocess.h -I..\..\..\libswresample\swresample.h -I..\..\..\libswscale\swscale.h -IF:\SDL2-2.0.12\include
+  OBJECT_DIR = CMakeFiles\we-player.dir
+  OBJECT_FILE_DIR = CMakeFiles\we-player.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\we-player.dir\
+  TARGET_PDB = we-player.pdb
+
 build CMakeFiles\we-player.dir\src\main.cpp.obj: CXX_COMPILER__we-player ..\..\..\src\main.cpp || cmake_object_order_depends_target_we-player
   FLAGS = -D__STDC_CONSTANT_MACROS /MDd /Zi /Ob0 /Od /RTC1
   INCLUDES = -I..\..\..\include -I..\..\..\libavcodec\avcodec.h -I..\..\..\libavformat\avformat.h -I..\..\..\libavutil\avutil.h -I..\..\..\libavdevice\avdevice.h -I..\..\..\libavfilter\avfilter.h -I..\..\..\libpostproc\postprocess.h -I..\..\..\libswresample\swresample.h -I..\..\..\libswscale\swscale.h -IF:\SDL2-2.0.12\include
@@ -54,7 +62,7 @@ build CMakeFiles\we-player.dir\src\main.cpp.obj: CXX_COMPILER__we-player ..\..\.
 #############################################
 # Link the executable we-player.exe
 
-build we-player.exe: CXX_EXECUTABLE_LINKER__we-player CMakeFiles\we-player.dir\src\main.cpp.obj | ..\..\..\lib\fltkd.lib ..\..\..\lib\fltkimagesd.lib ..\..\..\lib\fltkgld.lib ..\..\..\lib\fltkformsd.lib ..\..\..\lib\fltkjpegd.lib ..\..\..\lib\fltkpngd.lib ..\..\..\lib\fltkzlibd.lib ..\..\..\lib\avcodec.lib ..\..\..\lib\avformat.lib ..\..\..\lib\avutil.lib ..\..\..\lib\avdevice.lib ..\..\..\lib\avfilter.lib ..\..\..\lib\postproc.lib ..\..\..\lib\swresample.lib ..\..\..\lib\swscale.lib F$:\SDL2-2.0.12\lib\x86\SDL2.lib
+build we-player.exe: CXX_EXECUTABLE_LINKER__we-player CMakeFiles\we-player.dir\src\player.cpp.obj CMakeFiles\we-player.dir\src\main.cpp.obj | ..\..\..\lib\fltkd.lib ..\..\..\lib\fltkimagesd.lib ..\..\..\lib\fltkgld.lib ..\..\..\lib\fltkformsd.lib ..\..\..\lib\fltkjpegd.lib ..\..\..\lib\fltkpngd.lib ..\..\..\lib\fltkzlibd.lib ..\..\..\lib\avcodec.lib ..\..\..\lib\avformat.lib ..\..\..\lib\avutil.lib ..\..\..\lib\avdevice.lib ..\..\..\lib\avfilter.lib ..\..\..\lib\postproc.lib ..\..\..\lib\swresample.lib ..\..\..\lib\swscale.lib F$:\SDL2-2.0.12\lib\x86\SDL2.lib
   FLAGS = -D__STDC_CONSTANT_MACROS /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:X86 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = ..\..\..\lib\fltkd.lib  ..\..\..\lib\fltkimagesd.lib  ..\..\..\lib\fltkgld.lib  ..\..\..\lib\fltkformsd.lib  ..\..\..\lib\fltkjpegd.lib  ..\..\..\lib\fltkpngd.lib  ..\..\..\lib\fltkzlibd.lib  ..\..\..\lib\avcodec.lib  ..\..\..\lib\avformat.lib  ..\..\..\lib\avutil.lib  ..\..\..\lib\avdevice.lib  ..\..\..\lib\avfilter.lib  ..\..\..\lib\postproc.lib  ..\..\..\lib\swresample.lib  ..\..\..\lib\swscale.lib  F:\SDL2-2.0.12\lib\x86\SDL2.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
