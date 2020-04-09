@@ -14,7 +14,7 @@ set(CMAKE_CXX_FLAGS "-D__STDC_CONSTANT_MACROS")
 # 将源代码添加到此项目的可执行文件。
 add_executable (${PROJECT_NAME} 
 	"src/player.cpp"
-	 "src/main.cpp")
+     "src/main.cpp")
 	# 配置工程内部链接库
 set(FLTKD_LIBRARY "${PROJECT_SOURCE_DIR}/lib/fltkd.lib")
 set(FLTKIMAGED_LIBRARY "${PROJECT_SOURCE_DIR}/lib/fltkimagesd.lib")

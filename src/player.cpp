@@ -2,29 +2,14 @@
 
 #define __STDC_CONSTANT_MACROS
 
-#ifdef _WIN32
 // Windows
 extern "C" {
-#include "SDL.h"
+#include "SDL2/SDL.h"
 #include "libavcodec/avcodec.h"
 #include "libavformat/avformat.h"
 #include "libavutil/imgutils.h"
 #include "libswscale/swscale.h"
 };
-#else
-// Linux...
-#ifdef __cplusplus
-extern "C" {
-#endif
-#include <SDL2/SDL.h>
-#include <libavcodec/avcodec.h>
-#include <libavformat/avformat.h>
-#include <libavutil/imgutils.h>
-#include <libswscale/swscale.h>
-#ifdef __cplusplus
-};
-#endif
-#endif
 
 // Refresh Event
 #define SFM_REFRESH_EVENT (SDL_USEREVENT + 1)
@@ -78,9 +63,8 @@ int play() {
   SDL_Event event;
 
   struct SwsContext *img_convert_ctx;
-
-  // char filepath[]="bigbuckbunny_480x272.h265";
-  char filepath[] = "F:/work/video.mp4";
+ //char filepath[]="bigbuckbunny_480x272.h265";
+  char filepath[] = "C:/Users/mwcxy/Downloads/ccb.mp4";
 
   av_register_all();
   avformat_network_init();
@@ -137,9 +121,12 @@ int play() {
     return -1;
   }
   // SDL 2.0 Support for multiple windows
-  screen_w = pCodecCtx->width;
-  screen_h = pCodecCtx->height;
-  screen = SDL_CreateWindow("Simplest ffmpeg player's Window",
+
+//  screen_w = pCodecCtx->width;
+     screen_w = 640;
+     screen_h = 360;
+//  screen_h = pCodecCtx->height;
+  screen = SDL_CreateWindow("we-player",
                             SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
                             screen_w, screen_h, SDL_WINDOW_OPENGL);
 
@@ -174,11 +161,14 @@ int play() {
 
         if (packet->stream_index == videoindex) break;
       }
+      //avcodec_send_packet(pCodecCtx, packet) < 0
+
       ret = avcodec_decode_video2(pCodecCtx, pFrame, &got_picture, packet);
       if (ret < 0) {
         printf("Decode Error.\n");
         return -1;
       }
+     // avcodec_receive_frame(pCodecCtx, pFrame)
       if (got_picture) {
         sws_scale(img_convert_ctx, (const unsigned char *const *)pFrame->data,
                   pFrame->linesize, 0, pCodecCtx->height, pFrameYUV->data,

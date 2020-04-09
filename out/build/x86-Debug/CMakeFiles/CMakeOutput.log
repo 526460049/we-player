@@ -6,11 +6,11 @@ Id flags:
 
 The output was:
 0
-用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.25.28611 版
+用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.25.28612 版
 版权所有(C) Microsoft Corporation。保留所有权利。
 
 CMakeCCompilerId.c
-Microsoft (R) Incremental Linker Version 14.25.28611.0
+Microsoft (R) Incremental Linker Version 14.25.28612.0
 Copyright (C) Microsoft Corporation.  All rights reserved.
 
 /out:CMakeCCompilerId.exe 
@@ -30,11 +30,11 @@ Id flags:
 
 The output was:
 0
-用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.25.28611 版
+用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.25.28612 版
 版权所有(C) Microsoft Corporation。保留所有权利。
 
 CMakeCXXCompilerId.cpp
-Microsoft (R) Incremental Linker Version 14.25.28611.0
+Microsoft (R) Incremental Linker Version 14.25.28612.0
 Copyright (C) Microsoft Corporation.  All rights reserved.
 
 /out:CMakeCXXCompilerId.exe 
@@ -50,32 +50,32 @@ The CXX compiler identification is MSVC, found in "F:/work/we-player/out/build/x
 Determining if the C compiler works passed with the following output:
 Change Dir: F:/work/we-player/out/build/x86-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_00786 && [1/2] Building C object CMakeFiles\cmTC_00786.dir\testCCompiler.c.obj
-[2/2] Linking C executable cmTC_00786.exe
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_7b449 && [1/2] Building C object CMakeFiles\cmTC_7b449.dir\testCCompiler.c.obj
+[2/2] Linking C executable cmTC_7b449.exe
 
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: F:/work/we-player/out/build/x86-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_fe6cb && [1/2] Building C object CMakeFiles\cmTC_fe6cb.dir\CMakeCCompilerABI.c.obj
-[2/2] Linking C executable cmTC_fe6cb.exe
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_3deb4 && [1/2] Building C object CMakeFiles\cmTC_3deb4.dir\CMakeCCompilerABI.c.obj
+[2/2] Linking C executable cmTC_3deb4.exe
 
 
 
 Determining if the CXX compiler works passed with the following output:
 Change Dir: F:/work/we-player/out/build/x86-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_ae776 && [1/2] Building CXX object CMakeFiles\cmTC_ae776.dir\testCXXCompiler.cxx.obj
-[2/2] Linking CXX executable cmTC_ae776.exe
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_5cbba && [1/2] Building CXX object CMakeFiles\cmTC_5cbba.dir\testCXXCompiler.cxx.obj
+[2/2] Linking CXX executable cmTC_5cbba.exe
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: F:/work/we-player/out/build/x86-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_545f2 && [1/2] Building CXX object CMakeFiles\cmTC_545f2.dir\CMakeCXXCompilerABI.cpp.obj
-[2/2] Linking CXX executable cmTC_545f2.exe
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_d8f2c && [1/2] Building CXX object CMakeFiles\cmTC_d8f2c.dir\CMakeCXXCompilerABI.cpp.obj
+[2/2] Linking CXX executable cmTC_d8f2c.exe
 
 
 
